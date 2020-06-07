@@ -10,9 +10,8 @@ alias c="clear"
 # Directories
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
-alias sites="cd $HOME/Sites"
-alias lara="sites && cd laravel/"
-alias docs="lara && cd docs/"
+alias sites="cd $HOME/Wappz/klanten"
+alias o="open ."
 
 # Laravel
 alias a="php artisan"
@@ -21,26 +20,21 @@ alias seed="php artisan db:seed"
 
 # PHP
 alias cfresh="rm -rf vendor/ composer.lock && composer i"
+alias cr="composer require"
+alias cu="composer update"
+alias ci="composer install"
 
 # JS
-alias nfresh="rm -rf node_modules/ package-lock.json && npm install"
+alias nfresh="rm -rf node_modules/ package-lock.json && yarn install"
 alias watch="npm run watch"
+alias yi="yarn"
+alias ya="yarn add"
+alias yw="yarn watch"
 
-# Vagrant
-alias v="vagrant global-status"
-alias vup="vagrant up"
-alias vhalt="vagrant halt"
-alias vssh="vagrant ssh"
-alias vreload="vagrant reload"
-alias vrebuild="vagrant destroy --force && vagrant up"
-
-# Docker
-alias docker-composer="docker-compose"
-#alias dstop="docker stop $(docker ps -a -q)"
-#alias dpurgecontainers="dstop && docker rm $(docker ps -a -q)"
-#alias dpurgeimages="docker rmi $(docker images -q)"
-#dbuild() { docker build -t=$1 .; }
-#dbash() { docker exec -it $(docker ps -aqf "name=$1") bash; }
+# servers
+alias bf="ssh root@37.34.48.225"
+alias bc="ssh root@83.96.255.117"
+alias wappz="ssh root@83.96.252.51"
 
 # Git
 alias gst="git status"
