@@ -6,11 +6,15 @@ alias ll="/usr/local/opt/coreutils/libexec/gnubin/ls -AhlFo --color --group-dire
 alias phpstorm='open -a /Applications/PhpStorm.app "`pwd`"'
 alias shrug="echo '¯\_(ツ)_/¯' | pbcopy"
 alias c="clear"
+alias backupquick="sudo sysctl debug.lowpri_throttle_enabled=1"
+alias backupslow="sudo sysctl debug.lowpri_throttle_enabled=0"
 
 # Directories
 alias dotfiles="cd $DOTFILES"
 alias library="cd $HOME/Library"
 alias sites="cd $HOME/Wappz/klanten"
+alias apps="cd $HOME/Wappz/Apps"
+alias projects="cd $HOME/Wappz/projects"
 alias o="open ."
 
 # Laravel
